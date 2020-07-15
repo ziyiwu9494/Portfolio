@@ -6,6 +6,10 @@
  * Made By MaterializeCSS.com
  */
 
+.pdf-container{
+  height: 100vh;
+}
+
 body {
   background: url("/static/images/background.jpg") center center no-repeat fixed;
   background-size: cover;
