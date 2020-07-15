@@ -13,10 +13,5 @@ def index():
     return render_template('index.html', title='Home')
 
 
-@app.route('/projects')
-def projects():
-    return render_template('projects.html', title='Portfolio')
-
-
 if __name__ == '__main__':
     app.run()
