@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Ziyi Wu | Home</title>
-
+  <link rel="icon" href="../static/images/favicon.ico" type="image"/>
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="/static/libs/materialize/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -14,39 +14,49 @@
 </head>
 <body class="black">
 <!-- Navbar -->
-  <ul id="nav-mobile" class="sidenav sidenav-fixed black">
-      <li><a id="logo-container" href="#home" class="brand-logo white-text">{"name": "Ziyi Wu"}</a></li>
+  <ul id="nav-mobile" class="sidenav transparent ">
+      <li><a id="logo-container" href="#home" class="brand-logo white-text"><h5>{"name": "Ziyi Wu"}</h5></a></li>
+      <li><a class="grey-text" href="#">Home</a></li>
+      <li><a class="grey-text" href="#projects">Projects</a></li>
       <!--<li><a class="grey-text darken-2" href="blog">Blog</a></li>-->
-      <li><a class="grey-text darken-2" href="#projects">Projects</a></li>
-      <li><a class="grey-text darken-2" href="/static/files/SoftwareDevResume_ZiyiWu.pdf">Resume</a></li>
-      <li><a class="grey-text darken-2" href="#contact">Contact</a></li>
+      <!--<li><a class="grey-text darken-2" href="photography">Photography</a></li>-->
+      <li><a class="grey-text" href="#about">About</a></li>
+      <li><a class="grey-text" href="#contact">Contact</a></li>
+
   </ul>
-  <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-  <!--<nav class="grey darken-4 white-text" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo grey-text darken-2">{"name": "Ziyi Wu"}</a>
-      <ul class="right hide-on-med-and-down">
-          <li><a class="grey-text darken-2" href="#">Home</a></li>
-          <li><a class="grey-text darken-2" href="#">Blog</a></li>
-          <li><a class="grey-text darken-2" href="projects">Projects</a></li>
-          <li><a class="grey-text darken-2" href="#">Resume</a></li>
-          <li><a class="grey-text darken-2" href="#">Contact</a></li>
-      </ul>
-    </div>
-  </nav>-->
+  <a href="#" data-target="nav-mobile" class="sidenav-trigger fixed hide-on-med-and-up"><i class="material-icons">menu</i></a>
+
+        <nav class="transparent white-text" role="navigation">
+            <div class="nav-wrapper container">
+              <a id="logo-container" href="#home" class="brand-logo white-text">Ziyi Wu</a>
+              <ul class="right hide-on-med-and-down">
+                  <li><a class="grey-text" href="#home">Home</a></li>
+                  <!--<li><a class="grey-text darken-2" href="#">Blog</a></li>-->
+                  <li><a class="grey-text" href="#projects">Projects</a></li>
+                  <li><a class="grey-text" href="#about">About</a></li>
+                  <li><a class="grey-text" href="#contact">Contact</a></li>
+
+              </ul>
+            </div>
+        </nav>
 <!-- End of Navbar -->
+
 <!--Beginning of Homepage-->
     <main>
-      <div id="home" class="valign-wrapper">
+      <div id="home" class="valign-wrapper section">
+          <div class="offset hide-on-med-and-down">
+          </div>
           <div class="container">
               <div class="caption title left">
-                  <p class="flow-text grey-text darken-2">Portfolio</p>
+                  <h3 class="grey-text darken-2">Portfolio</h3>
               </div>
           </div>
       </div>
 <!--Beginning of Homepage-->
 <!-- Start of Projects Container -->
-        <div id = "projects" class="container">
+        <div id = "projects" class="container section">
+            <div class="offset hide-on-med-and-down">
+          </div>
           <div class="col s1">
             <h3 class="grey-text text-lighten-4">Projects</h3>
             <div class="card horizontal small grey darken-4">
@@ -97,10 +107,48 @@
           </div>
         </div>
 <!-- End of Projects Container -->
-    <div style="height: 20vh">
-    </div>
+        <div class="padding">
+        </div>
+<!-- Beginning of About Section -->
+        <div id="about" class="container section">
+            <div class="offset hide-on-med-and-down"></div>
+            <h3 class="grey-text text-lighten-4">About</h3>
+            <div class="row">
+                <div class="col s12 m8 offset-m2">
+                    <div class="card black">
+                         <div class="brand-logo center">
+                             <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="/static/images/profile.jpg">
+                             </div>
+                         </div>
+                        <div class="card-reveal" style="background-color: black">
+                            <span class="card-title grey-text text-lighten-3">About Me<i class="material-icons right grey-text">close</i></span>
+                             <p class="grey-text">
+                                 Welcome to my website! I am a class of 2022 computer science student at USC.
+                                 I'm interested in the engineering side of CS research and the research side of
+                                 software engineering. I like working on cool project ideas and asking the medium-sized
+                                 questions about how and why our world and our creations work. In my free time, I
+                                 enjoy reading science fiction and fantasy, board games, trying new foods, and photography.
+                                 Feel free to message me with inquiries about any interesting ideas or adventures that you
+                                 might want me on!
+                             </p>
+                            <div class="center-align card-action">
+                                <a href="/static/files/SoftwareDevResume_ZiyiWu.pdf"> Resume</a>
+                                <!--<button class="btn grey darken-3 waves-effect waves-light orange-text" onclick="location.href='/static/files/SoftwareDevResume_ZiyiWu.pdf';" name="action">
+                                    <i class="fa fa-file" aria-hidden="true"></i> Resume
+                                </button>-->
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- End of About Section -->
+        <div class="padding">
+        </div>
 <!-- Beginning of Contacts Form -->
-        <div id="contact" class="container">
+        <div id="contact" class="container section">
+            <div class="offset hide-on-med-and-down"></div>
             <h3 class="grey-text text-lighten-4">Contact</h3>
           <div class="row">
             <form class="col s12" action="mailto:ziyiwu@usc.edu" method="post" enctype="text/plain">
@@ -126,24 +174,31 @@
             </form>
           </div>
         </div>
+<!-- End of Contacts Form -->
+        <div class="padding">
+        </div>
     </main>
-    <div style="height: 20vh">
-    </div>
+
 <!--Beginning of Footer-->
   <footer class="black page-footer">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <h5 class="white-text">Ziyi Wu</h5>
-            <p class="grey-text text-darken-1">You can use rows and columns here to organize your footer content.</p>
+            <h5 class="white-text">Contact Me</h5>
+            <p class="grey-text text-darken-1">
+                Email: <a href="mailto:ziyiwu@usc.edu">ziyiwu@usc.edu</a><br>
+                Address: 6 Milagra, Irvine, CA, 92602
+            </p>
           </div>
           <div class="col l4 offset-l2 s12">
             <h5 class="white-text">Links</h5>
             <ul>
+              <li><a class="grey-text text-darken-2" href="#home">Home </a></li>
               <li><a class="grey-text text-darken-2" href="#projects">Projects </a></li>
               <!--<li><a class="grey-text text-darken-2" href="blog/blog">Blog</a></li>-->
-              <li><a class="grey-text text-darken-2" href="/static/files/SoftwareDevResume_ZiyiWu.pdf">Resume</a></li>
-              <li><a class="grey-text text-darken-2" href="#contact">Contact</a></li>
+                <li><a class="grey-text text-darken-2" href="#about">About</a></li>
+                <li><a class="grey-text text-darken-2" href="#contact">Contact</a></li>
+
             </ul>
           </div>
         </div>
@@ -151,7 +206,7 @@
       <div class="footer-copyright">
         <div class="container">
         © 2020 Ziyi Wu
-        <!--<a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
+        <a class="grey-text text-darken-2 right" href="/static/files/SoftwareDevResume_ZiyiWu.pdf">Resume</a>
         </div>
       </div>
     </footer>
