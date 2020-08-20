@@ -70,45 +70,16 @@
                   <p class="grey-text darken-1">{{ card.description }}</p>
                 </div>
                 <div class="card-action">
-                    {{% if "github" in card.keys() %}}
+                    {% if "github" in card.keys() %}
                         <a href="{{ card["github"] }}"><i class="fab fa-github"></i> Github</a>
-                    {{ endif }}
-                    {{% if "demo" in card.keys() %}}
+                    {% endif %}
+                    {% if "demo" in card.keys() %}
                     <a href="{{ card["demo"] }}">Demo</a>
+                    {% endif %}
                 </div>
               </div>
             </div>
-
-              <div class="card horizontal small grey darken-4">
-                  <div class="card-image">
-                    <img class="portfolio-image" src="/static/images/sandpile.png">
-                  </div>
-                  <div class="card-stacked">
-                    <div class="card-content">
-                        <span class="card-title white-text">Sandpile</span>
-                      <p class="grey-text darken-1">Abelian Sandpile model created using PyGame</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#"><i class="fab fa-github"></i> Github</a>
-                        <a href="#">Demo</a>
-                    </div>
-                </div>
-            </div>
-              <div class="card horizontal small grey darken-4">
-                  <div class="card-image">
-                    <img class="portfolio-image" src="/static/images/sandpile.png">
-                  </div>
-                  <div class="card-stacked">
-                    <div class="card-content">
-                        <span class="card-title white-text">Sandpile</span>
-                      <p class="grey-text darken-1">Abelian Sandpile model created using PyGame</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#"><i class="fab fa-github"></i> Github</a>
-                        <a href="#">Demo</a>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
           </div>
         </div>
 <!-- End of Projects Container -->
