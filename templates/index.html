@@ -59,21 +59,26 @@
           </div>
           <div class="col s1">
             <h3 class="grey-text text-lighten-4">Projects</h3>
+            {% for card in cards %}
             <div class="card horizontal small grey darken-4">
               <div class="card-image">
-                <img class="portfolio-image" src="/static/images/sandpile.png">
+                <img class="portfolio-image" src="{{ card.image_uri }}">
               </div>
               <div class="card-stacked">
                 <div class="card-content">
-                    <span class="card-title white-text">Sandpile</span>
-                  <p class="grey-text darken-1">Abelian Sandpile model created using PyGame</p>
+                    <span class="card-title white-text">{{ card.title }}</span>
+                  <p class="grey-text darken-1">{{ card.description }}</p>
                 </div>
                 <div class="card-action">
-                    <a href="#"><i class="fab fa-github"></i> Github</a>
-                    <a href="#">Demo</a>
+                    {{% if "github" in card.keys() %}}
+                        <a href="{{ card["github"] }}"><i class="fab fa-github"></i> Github</a>
+                    {{ endif }}
+                    {{% if "demo" in card.keys() %}}
+                    <a href="{{ card["demo"] }}">Demo</a>
                 </div>
               </div>
             </div>
+
               <div class="card horizontal small grey darken-4">
                   <div class="card-image">
                     <img class="portfolio-image" src="/static/images/sandpile.png">
